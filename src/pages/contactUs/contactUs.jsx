@@ -25,7 +25,7 @@ const yajas2=(e)=>{
 }
 
 const submit = () =>{
-  axios.put("http://localhost:8080/api/user/addQueries",{
+  axios.put("https://backend-f463i88db-yajas-menon.vercel.app/api/user/addQueries",{
     name:inputs.uname2,
     email:inputs.uemail2,
     msg:inputs.umsg2

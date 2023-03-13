@@ -9,7 +9,7 @@ const Queries = ()  =>{
   const [queries1,setQueries]=useState([]);
   const navigate=useNavigate();
      useEffect (() =>{
-      axios.get('http://localhost:8080/api/user/getUsers').then(res =>{
+      axios.get('https://backend-f463i88db-yajas-menon.vercel.app/api/user/getUsers').then(res =>{
         setQueries(res.data.users);
         console.log(queries1);
        }).catch(err =>{

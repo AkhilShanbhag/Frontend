@@ -19,7 +19,7 @@ function Login() {
 
     const handleSubmit = async (event) => {
         event.preventDefault()
-        await axios.post('http://localhost:8080/api/user/login', {
+        await axios.post('https://backend-f463i88db-yajas-menon.vercel.app/api/user/login', {
             email: inputs.uemail,
             password: inputs.upass
         }).then(res => {
@@ -42,7 +42,7 @@ function Login() {
 
     const handleSubmit1 = async (event) => {
         event.preventDefault()
-       await axios.post('http://localhost:8080/api/user/signup',{
+       await axios.post('https://backend-f463i88db-yajas-menon.vercel.app/api/user/signup',{
         name:initialValues.uname1,
         email:initialValues.uemail1,
         password:initialValues.upass1,

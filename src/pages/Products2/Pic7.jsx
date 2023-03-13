@@ -11,7 +11,7 @@ const Pic7 = () => {
     let a=localStorage.getItem('product');
     const [products,setProducts]=useState([]);
        useEffect(()=>{
-            axios.get('http://localhost:8080/api/user/getProducts').then(res=>{
+            axios.get('https://backend-f463i88db-yajas-menon.vercel.app/api/user/getProducts').then(res=>{
             // console.log(res.data.data);
             setProducts(res.data.data);
             console.log(products);
